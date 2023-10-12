@@ -1,4 +1,4 @@
-## SEM: SElf-weighted Multi-view contrastive learning with reconstruction regularization
+## Self-Weighted Contrastive Learning among Multiple Views for Mitigating Representation Degeneration
 
 Prepare a multi-view/modal dataset, for example:
 
