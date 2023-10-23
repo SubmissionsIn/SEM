@@ -64,6 +64,8 @@ if args.dataset == "NUSWIDE":
 if args.dataset == "Caltech":
     args.con_epochs = 100
     args.bi_level_iteration = 4
+    # or
+    args.bi_level_iteration = 3
 
 Total_con_epochs = args.con_epochs * args.bi_level_iteration
 
@@ -428,5 +430,5 @@ def PLOT_LOSS(record_loss_con=[]):
     plt.show()
 
 
-if Dataname == 'Caltech' and args.contrastive_loss == 'InfoNCE':
+if Dataname == 'Caltech' and args.contrastive_loss == 'InfoNCE' and args.bi_level_iteration == 4:
     PLOT_LOSS(record_loss_con)
